@@ -1,0 +1,15 @@
+QoS 0  crash   0 ms after publish() : 29/30 final readings received
+QoS 0  crash   1 ms after publish() : 30/30 final readings received
+QoS 0  crash   5 ms after publish() : 30/30 final readings received
+QoS 0  crash  50 ms after publish() : 30/30 final readings received
+QoS 0  crash ack after publish() : 30/30 final readings received
+QoS 1  crash   0 ms after publish() : 29/30 final readings received
+QoS 1  crash   1 ms after publish() : 30/30 final readings received
+QoS 1  crash   5 ms after publish() : 30/30 final readings received
+QoS 1  crash  50 ms after publish() : 30/30 final readings received
+QoS 1  crash ack after publish() : 30/30 final readings received
+QoS 2  crash   0 ms after publish() : 15/30 final readings received
+QoS 2  crash   1 ms after publish() : 30/30 final readings received
+QoS 2  crash   5 ms after publish() : 30/30 final readings received
+QoS 2  crash  50 ms after publish() : 30/30 final readings received
+QoS 2  crash ack after publish() : 30/30 final readings received

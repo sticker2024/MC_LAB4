@@ -1,0 +1,32 @@
+run 1/3 with publisher QoS 0
+  [QoS 0] broker DOWN
+  [QoS 0] broker back up
+   events: 72.1s SUB connected session_present=False | 73.1s PUB connected | 79.0s PUB disconnected | 82.0s SUB connected session_present=False | 83.0s PUB connected | 99.6s PUB disconnected
+  published 100  received 81  LOST 19  duplicates 0  (lost seq 29..47)
+run 1/3 with publisher QoS 1
+  [QoS 1] broker DOWN
+  [QoS 1] broker back up
+   events: 104.8s SUB connected session_present=False | 105.8s PUB connected | 111.8s PUB disconnected | 114.8s SUB connected session_present=False | 115.8s PUB connected | 132.3s PUB disconnected
+  published 100  received 100  LOST 0  duplicates 0  (lost seq None..None)
+run 2/3 with publisher QoS 0
+  [QoS 0] broker DOWN
+  [QoS 0] broker back up
+   events: 137.5s SUB connected session_present=False | 138.5s PUB connected | 144.5s PUB disconnected | 147.6s SUB connected session_present=False | 148.5s PUB connected | 165.1s PUB disconnected
+  published 100  received 80  LOST 20  duplicates 0  (lost seq 29..48)
+run 2/3 with publisher QoS 1
+  [QoS 1] broker DOWN
+  [QoS 1] broker back up
+   events: 170.3s SUB connected session_present=False | 171.3s PUB connected | 177.3s PUB disconnected | 180.3s SUB connected session_present=False | 181.3s PUB connected | 197.8s PUB disconnected
+  published 100  received 100  LOST 0  duplicates 0  (lost seq None..None)
+run 3/3 with publisher QoS 0
+  [QoS 0] broker DOWN
+  [QoS 0] broker back up
+   events: 203.0s SUB connected session_present=False | 204.0s PUB connected | 210.0s PUB disconnected | 213.0s SUB connected session_present=False | 214.0s PUB connected | 230.5s PUB disconnected
+  published 100  received 80  LOST 20  duplicates 0  (lost seq 29..48)
+run 3/3 with publisher QoS 1
+  [QoS 1] broker DOWN
+  [QoS 1] broker back up
+   events: 235.8s SUB connected session_present=False | 236.8s PUB connected | 242.8s PUB disconnected | 245.8s SUB connected session_present=False | 246.8s PUB connected | 263.3s PUB disconnected
+  published 100  received 100  LOST 0  duplicates 0  (lost seq None..None)
+SUMMARY QoS 0 (ordered mode): lost per run = [19, 20, 20]  mean = 19.7 of 100
+SUMMARY QoS 1 (ordered mode): lost per run = [0, 0, 0]  mean = 0.0 of 100

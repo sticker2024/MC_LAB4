@@ -1,0 +1,22 @@
+06:33:15.691 [PUB] connected to localhost:1883 rc=Success - LWT registered on factory/line3/humstatus
+06:33:15.691 [PUB] factory/line3/humstatus <- 'online' (retain=True)
+06:33:15.691 [PUB] broker acknowledged mid=1
+06:33:16.191 [PUB] factory/line3/humidity <- 68.33  (qos=1, retain=True, mid=2)
+06:33:16.192 [PUB] broker acknowledged mid=2
+06:33:17.192 [PUB] factory/line3/humidity <- 35.61  (qos=1, retain=True, mid=3)
+06:33:17.192 [PUB] broker acknowledged mid=3
+06:33:18.192 [PUB] factory/line3/humidity <- 30.94  (qos=1, retain=True, mid=4)
+06:33:18.192 [PUB] broker acknowledged mid=4
+06:33:19.192 [PUB] factory/line3/humidity <- 69.95  (qos=1, retain=True, mid=5)
+06:33:19.193 [PUB] broker acknowledged mid=5
+06:33:20.193 [PUB] factory/line3/humidity <- 37.37  (qos=1, retain=True, mid=6)
+06:33:20.193 [PUB] broker acknowledged mid=6
+06:33:21.193 [PUB] factory/line3/humidity <- 34.82  (qos=1, retain=True, mid=7)
+06:33:21.194 [PUB] broker acknowledged mid=7
+06:33:22.193 [PUB] factory/line3/humidity <- 56.06  (qos=1, retain=True, mid=8)
+06:33:22.194 [PUB] broker acknowledged mid=8
+06:33:23.194 [PUB] factory/line3/humidity <- 43.83  (qos=1, retain=True, mid=9)
+06:33:23.194 [PUB] broker acknowledged mid=9
+06:33:24.194 [PUB] factory/line3/humidity <- 65.58  (qos=1, retain=True, mid=10)
+06:33:24.195 [PUB] broker acknowledged mid=10
+06:33:24.593 [PUB] clean disconnect (no LWT will be published)

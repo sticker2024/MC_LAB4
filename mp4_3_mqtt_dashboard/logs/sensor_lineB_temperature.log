@@ -1,0 +1,21 @@
+11:12:48.192 [SENSOR] plant1/lineB/temperature connected rc=Success, LWT on plant1/lineB/status
+11:12:48.692 [SENSOR] plant1/lineB/temperature <- 72.28
+11:12:50.193 [SENSOR] plant1/lineB/temperature <- 75.75
+11:12:51.693 [SENSOR] plant1/lineB/temperature <- 88.05
+11:12:53.193 [SENSOR] plant1/lineB/temperature <- 71.22
+11:12:54.694 [SENSOR] plant1/lineB/temperature <- 72.97
+11:12:56.194 [SENSOR] plant1/lineB/temperature <- 81.84
+11:12:57.695 [SENSOR] plant1/lineB/temperature <- 67.76
+11:12:59.195 [SENSOR] plant1/lineB/temperature <- 72.63
+11:13:00.696 [SENSOR] plant1/lineB/temperature <- 74.47
+11:13:02.197 [SENSOR] plant1/lineB/temperature <- 69.31
+11:13:03.697 [SENSOR] plant1/lineB/temperature <- 76.65
+11:13:05.198 [SENSOR] plant1/lineB/temperature <- 73.98
+11:13:06.698 [SENSOR] plant1/lineB/temperature <- 77.9
+11:13:08.199 [SENSOR] plant1/lineB/temperature <- 73.16
+11:13:09.700 [SENSOR] plant1/lineB/temperature <- 75.44
+11:13:11.200 [SENSOR] plant1/lineB/temperature <- 68.72
+11:13:12.700 [SENSOR] plant1/lineB/temperature <- 73.02
+11:13:14.201 [SENSOR] plant1/lineB/temperature <- 68.91
+11:13:15.701 [SENSOR] plant1/lineB/temperature <- 73.33
+11:13:17.202 [SENSOR] plant1/lineB/temperature <- 72.93

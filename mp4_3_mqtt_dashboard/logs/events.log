@@ -1,0 +1,1 @@
+$ kill -9 117     # plant_sensor.py --topic plant1/lineB/temperature  (has LWT)

@@ -1,0 +1,45 @@
+06:29:23.774 [PUB] connected to localhost:1883 rc=Success - LWT registered on factory/line3/status
+06:29:23.774 [PUB] factory/line3/status <- 'online' (retain=True)
+06:29:23.774 [PUB] broker acknowledged mid=1
+06:29:24.274 [PUB] factory/line3/temperature <- 68.26  (qos=1, retain=True, mid=2)
+06:29:24.275 [PUB] broker acknowledged mid=2
+06:29:25.275 [PUB] factory/line3/temperature <- 63.61  (qos=1, retain=True, mid=3)
+06:29:25.275 [PUB] broker acknowledged mid=3
+06:29:26.275 [PUB] factory/line3/temperature <- 73.86  (qos=1, retain=True, mid=4)
+06:29:26.276 [PUB] broker acknowledged mid=4
+06:29:27.275 [PUB] factory/line3/temperature <- 65.42  (qos=1, retain=True, mid=5)
+06:29:27.276 [PUB] broker acknowledged mid=5
+06:29:28.276 [PUB] factory/line3/temperature <- 62.33  (qos=1, retain=True, mid=6)
+06:29:28.277 [PUB] broker acknowledged mid=6
+06:29:29.277 [PUB] factory/line3/temperature <- 74.06  (qos=1, retain=True, mid=7)
+06:29:29.277 [PUB] broker acknowledged mid=7
+06:29:30.277 [PUB] factory/line3/temperature <- 92.13  (qos=1, retain=True, mid=8)
+06:29:30.278 [PUB] broker acknowledged mid=8
+06:29:31.278 [PUB] factory/line3/temperature <- 88.02  (qos=1, retain=True, mid=9)
+06:29:31.278 [PUB] broker acknowledged mid=9
+06:29:32.278 [PUB] factory/line3/temperature <- 86.78  (qos=1, retain=True, mid=10)
+06:29:32.279 [PUB] broker acknowledged mid=10
+06:29:33.278 [PUB] factory/line3/temperature <- 67.77  (qos=1, retain=True, mid=11)
+06:29:33.279 [PUB] broker acknowledged mid=11
+06:29:34.279 [PUB] factory/line3/temperature <- 78.78  (qos=1, retain=True, mid=12)
+06:29:34.280 [PUB] broker acknowledged mid=12
+06:29:35.280 [PUB] factory/line3/temperature <- 69.68  (qos=1, retain=True, mid=13)
+06:29:35.280 [PUB] broker acknowledged mid=13
+06:29:36.280 [PUB] factory/line3/temperature <- 66.04  (qos=1, retain=True, mid=14)
+06:29:36.281 [PUB] broker acknowledged mid=14
+06:29:37.281 [PUB] factory/line3/temperature <- 63.72  (qos=1, retain=True, mid=15)
+06:29:37.281 [PUB] broker acknowledged mid=15
+06:29:38.281 [PUB] factory/line3/temperature <- 67.5  (qos=1, retain=True, mid=16)
+06:29:38.282 [PUB] broker acknowledged mid=16
+06:29:39.281 [PUB] factory/line3/temperature <- 92.46  (qos=1, retain=True, mid=17)
+06:29:39.282 [PUB] broker acknowledged mid=17
+06:29:40.282 [PUB] factory/line3/temperature <- 89.01  (qos=1, retain=True, mid=18)
+06:29:40.282 [PUB] broker acknowledged mid=18
+06:29:41.282 [PUB] factory/line3/temperature <- 88.23  (qos=1, retain=True, mid=19)
+06:29:41.283 [PUB] broker acknowledged mid=19
+06:29:42.283 [PUB] factory/line3/temperature <- 88.02  (qos=1, retain=True, mid=20)
+06:29:42.283 [PUB] broker acknowledged mid=20
+06:29:43.283 [PUB] factory/line3/temperature <- 66.77  (qos=1, retain=True, mid=21)
+06:29:43.283 [PUB] broker acknowledged mid=21
+06:29:44.283 [PUB] factory/line3/temperature <- 70.84  (qos=1, retain=True, mid=22)
+06:29:44.284 [PUB] broker acknowledged mid=22

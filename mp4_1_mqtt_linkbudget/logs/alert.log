@@ -1,0 +1,5 @@
+06:29:22.902 [ALERT-SUB] connected rc=Success; subscribing to ['factory/+/temperature', 'factory/+/status'] at QoS 1 (threshold 90.0)
+06:29:23.774 [ALERT-SUB] STATUS factory/line3/status = online
+06:29:30.278 [ALERT-SUB] ALERT factory/line3/temperature value 92.13 exceeds threshold 90.0
+06:29:39.282 [ALERT-SUB] ALERT factory/line3/temperature value 92.46 exceeds threshold 90.0
+06:29:45.222 [ALERT-SUB] STATUS factory/line3/status = offline

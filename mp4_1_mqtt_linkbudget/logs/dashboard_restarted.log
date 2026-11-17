@@ -1,0 +1,9 @@
+06:29:40.280 [DASH-restarted] connected rc=Success; subscribing to ['factory/line3/temperature', 'factory/line3/status'] at QoS 1
+06:29:40.321 [DASH-restarted] factory/line3/temperature    92.46    qos=1  <-- RETAINED (delivered on subscribe)
+06:29:40.321 [DASH-restarted] factory/line3/status         online   qos=1  <-- RETAINED (delivered on subscribe)
+06:29:40.321 [DASH-restarted] factory/line3/temperature    89.01    qos=1
+06:29:41.283 [DASH-restarted] factory/line3/temperature    88.23    qos=1
+06:29:42.283 [DASH-restarted] factory/line3/temperature    88.02    qos=1
+06:29:43.283 [DASH-restarted] factory/line3/temperature    66.77    qos=1
+06:29:44.284 [DASH-restarted] factory/line3/temperature    70.84    qos=1
+06:29:45.222 [DASH-restarted] factory/line3/status         offline  qos=1

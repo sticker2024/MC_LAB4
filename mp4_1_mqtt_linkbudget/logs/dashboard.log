@@ -1,0 +1,16 @@
+06:29:22.900 [DASH] connected rc=Success; subscribing to ['factory/line3/temperature', 'factory/line3/status'] at QoS 1
+06:29:23.774 [DASH] factory/line3/status         online   qos=1
+06:29:24.274 [DASH] factory/line3/temperature    68.26    qos=1
+06:29:25.275 [DASH] factory/line3/temperature    63.61    qos=1
+06:29:26.275 [DASH] factory/line3/temperature    73.86    qos=1
+06:29:27.276 [DASH] factory/line3/temperature    65.42    qos=1
+06:29:28.276 [DASH] factory/line3/temperature    62.33    qos=1
+06:29:29.277 [DASH] factory/line3/temperature    74.06    qos=1
+06:29:30.278 [DASH] factory/line3/temperature    92.13    qos=1
+06:29:31.278 [DASH] factory/line3/temperature    88.02    qos=1
+06:29:32.278 [DASH] factory/line3/temperature    86.78    qos=1
+06:29:33.279 [DASH] factory/line3/temperature    67.77    qos=1
+06:29:34.280 [DASH] factory/line3/temperature    78.78    qos=1
+06:29:35.280 [DASH] factory/line3/temperature    69.68    qos=1
+06:29:36.280 [DASH] factory/line3/temperature    66.04    qos=1
+06:29:37.281 [DASH] factory/line3/temperature    63.72    qos=1

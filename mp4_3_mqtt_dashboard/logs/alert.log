@@ -1,0 +1,17 @@
+11:12:47.164 [ALERT] connected rc=Success; subscribing 'plant1/+/+'; thresholds {'temperature': 85.0, 'vibration': 4.5, 'humidity': 65.0} overrides {'plant1/lineB/temperature': 80.0}
+11:12:48.692 [ALERT] ALERT plant1/lineA/vibration = 5.15 exceeds 4.5
+11:12:51.693 [ALERT] ALERT plant1/lineB/temperature = 88.05 exceeds 80.0
+11:12:56.195 [ALERT] ALERT plant1/lineB/temperature = 81.84 exceeds 80.0
+11:12:57.696 [ALERT] ALERT plant1/lineA/temperature = 90.15 exceeds 85.0
+11:13:04.699 [ALERT] ALERT plant1/lineA/temperature = 86.43 exceeds 85.0
+11:13:07.711 [ALERT] ALERT plant1/lineA/vibration = 5.76 exceeds 4.5
+11:13:09.212 [ALERT] ALERT plant1/lineA/vibration = 4.87 exceeds 4.5
+11:13:10.019 [ALERT] ALERT plant1/lineB/vibration = 4.69 exceeds 4.5
+11:13:12.715 [ALERT] ALERT plant1/lineA/vibration = 5.72 exceeds 4.5
+11:13:13.215 [ALERT] ALERT plant1/lineA/vibration = 5.65 exceeds 4.5
+11:13:13.520 [ALERT] ALERT plant1/lineB/vibration = 4.9 exceeds 4.5
+11:13:15.217 [ALERT] ALERT plant1/lineA/vibration = 6.05 exceeds 4.5
+11:13:17.243 [ALERT] ALERT plant1/lineA/vibration = 4.53 exceeds 4.5
+11:13:18.048 [ALERT] OFFLINE plant1/lineB/status - publisher lost (Last Will delivered by broker)
+11:13:22.727 [ALERT] ALERT plant1/lineA/vibration = 4.55 exceeds 4.5
+11:13:23.330 [ALERT] ALERT plant1/lineB/vibration = 4.71 exceeds 4.5

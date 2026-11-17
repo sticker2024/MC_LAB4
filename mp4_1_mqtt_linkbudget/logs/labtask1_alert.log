@@ -1,0 +1,20 @@
+06:33:14.645 [ALERT-SUB] connected rc=Success; subscribing to ['factory/line3/+', 'factory/+/status'] at QoS 1 (threshold 90.0)
+06:33:15.690 [ALERT-SUB] STATUS factory/line3/status = online
+06:33:16.191 [ALERT-SUB] rx    factory/line3/temperature value 65.77
+06:33:16.192 [ALERT-SUB] rx    factory/line3/humidity value 68.33
+06:33:17.191 [ALERT-SUB] rx    factory/line3/temperature value 84.14
+06:33:17.192 [ALERT-SUB] rx    factory/line3/humidity value 35.61
+06:33:18.192 [ALERT-SUB] rx    factory/line3/temperature value 82.22
+06:33:18.192 [ALERT-SUB] rx    factory/line3/humidity value 30.94
+06:33:19.192 [ALERT-SUB] rx    factory/line3/temperature value 76.77
+06:33:19.193 [ALERT-SUB] rx    factory/line3/humidity value 69.95
+06:33:20.193 [ALERT-SUB] rx    factory/line3/temperature value 67.56
+06:33:20.193 [ALERT-SUB] rx    factory/line3/humidity value 37.37
+06:33:21.193 [ALERT-SUB] rx    factory/line3/temperature value 87.74
+06:33:21.194 [ALERT-SUB] rx    factory/line3/humidity value 34.82
+06:33:22.194 [ALERT-SUB] rx    factory/line3/temperature value 88.27
+06:33:22.194 [ALERT-SUB] rx    factory/line3/humidity value 56.06
+06:33:23.194 [ALERT-SUB] rx    factory/line3/temperature value 77.94
+06:33:23.195 [ALERT-SUB] rx    factory/line3/humidity value 43.83
+06:33:24.195 [ALERT-SUB] rx    factory/line3/humidity value 65.58
+06:33:24.195 [ALERT-SUB] rx    factory/line3/temperature value 77.68

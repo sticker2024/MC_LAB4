@@ -1,0 +1,26 @@
+scenario,rank,tech,score,why,expected_top
+S1 Smart water meter,1,NB-IoT,96.7,"Strong on coverage, data rate, battery life.",NB-IoT
+S1 Smart water meter,2,LoRaWAN,84.9,"Strong on data rate, battery life, mobility. Weak on coverage, infrastructure ownership.",NB-IoT
+S1 Smart water meter,3,LTE-M,84.4,"Strong on data rate, mobility, infrastructure ownership. Weak on cost at scale.",NB-IoT
+S1 Smart water meter,4,5G RedCap,41.9,"Strong on data rate, infrastructure ownership. Weak on battery life, cost at scale. Rules: R5.",NB-IoT
+S1 Smart water meter,5,BLE/Zigbee,19.7,"Strong on data rate, mobility, cost at scale. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.",NB-IoT
+S2 Fleet-tracked shipping container,1,LTE-M,93.4,"Strong on coverage, data rate, battery life.",LTE-M
+S2 Fleet-tracked shipping container,2,NB-IoT,86.9,"Strong on coverage, data rate, battery life. Weak on mobility.",LTE-M
+S2 Fleet-tracked shipping container,3,5G RedCap,81.1,"Strong on data rate, infrastructure ownership. Weak on cost at scale.",LTE-M
+S2 Fleet-tracked shipping container,4,LoRaWAN,41.1,"Strong on data rate, battery life, cost at scale. Weak on mobility, coverage. Rules: R3.",LTE-M
+S2 Fleet-tracked shipping container,5,BLE/Zigbee,8.7,"Strong on data rate, battery life, cost at scale. Weak on coverage, mobility. Rules: R2; R3. INFEASIBLE for this scenario.",LTE-M
+S3 Factory-floor sensor network,1,BLE/Zigbee,100.0,"Strong on coverage, data rate, battery life.",BLE/Zigbee
+S3 Factory-floor sensor network,2,LoRaWAN,74.6,"Strong on battery life, infrastructure ownership, cost at scale. Weak on coverage, mobility.",BLE/Zigbee
+S3 Factory-floor sensor network,3,NB-IoT,19.0,"Strong on data rate, battery life, cost at scale. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.",BLE/Zigbee
+S3 Factory-floor sensor network,4,LTE-M,19.0,"Strong on data rate, battery life. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.",BLE/Zigbee
+S3 Factory-floor sensor network,5,5G RedCap,17.6,"Strong on data rate. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.",BLE/Zigbee
+S4 Wearable health monitor,1,BLE/Zigbee,100.0,"Strong on coverage, data rate, battery life.",BLE/Zigbee
+S4 Wearable health monitor,2,LoRaWAN,74.6,"Strong on battery life, infrastructure ownership, cost at scale. Weak on coverage, mobility.",BLE/Zigbee
+S4 Wearable health monitor,3,NB-IoT,19.0,"Strong on data rate, battery life, cost at scale. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.",BLE/Zigbee
+S4 Wearable health monitor,4,LTE-M,19.0,"Strong on data rate, battery life. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.",BLE/Zigbee
+S4 Wearable health monitor,5,5G RedCap,18.8,"Strong on data rate, battery life. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.",BLE/Zigbee
+N1 NEW: City smart-parking sensors,1,NB-IoT,93.4,"Strong on coverage, data rate, battery life. Weak on cost at scale.",NB-IoT
+N1 NEW: City smart-parking sensors,2,LTE-M,90.2,"Strong on coverage, data rate, battery life. Weak on cost at scale.",NB-IoT
+N1 NEW: City smart-parking sensors,3,LoRaWAN,81.6,"Strong on data rate, battery life, mobility. Weak on coverage, infrastructure ownership.",NB-IoT
+N1 NEW: City smart-parking sensors,4,5G RedCap,70.5,"Strong on data rate, infrastructure ownership. Weak on cost at scale, battery life.",NB-IoT
+N1 NEW: City smart-parking sensors,5,BLE/Zigbee,19.5,"Strong on data rate, battery life, mobility. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.",NB-IoT

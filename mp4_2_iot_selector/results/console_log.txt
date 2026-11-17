@@ -1,0 +1,84 @@
+============================================================================================================
+Scenario: S1 Smart water meter
+  Underground/basement meters, 100 B reading per day, 15-year battery, 50 000 units, operator network.
+  requirement levels -> data_rate 1/5 (9.259e-06 kbps), battery 5/5 (15 y), cost sensitivity 4/5, coverage=deep_indoor, mobility=stationary, infra=operator
+------------------------------------------------------------------------------------------------------------
+rank technology     score  justification
+1    NB-IoT          96.7  Strong on coverage, data rate, battery life.
+2    LoRaWAN         84.9  Strong on data rate, battery life, mobility. Weak on coverage, infrastructure ownership.
+3    LTE-M           84.4  Strong on data rate, mobility, infrastructure ownership. Weak on cost at scale.
+4    5G RedCap       41.9  Strong on data rate, infrastructure ownership. Weak on battery life, cost at scale. Rules: R5.
+                           - R5 >10-year battery target, RedCap idle power too high (x0.7)
+5    BLE/Zigbee      19.7  Strong on data rate, mobility, cost at scale. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.
+                           - R2 cannot provide the required coverage type (x0.3, infeasible)
+  => top pick: NB-IoT   (expected from unit reasoning: NB-IoT) MATCH
+
+============================================================================================================
+Scenario: S2 Fleet-tracked shipping container
+  Position report every hour, 200 B, 5-year battery, crosses countries/oceans, 3 000 units.
+  requirement levels -> data_rate 1/5 (0.0004444 kbps), battery 3/5 (5 y), cost sensitivity 3/5, coverage=wide_area_cellular, mobility=global_roaming, infra=operator
+------------------------------------------------------------------------------------------------------------
+rank technology     score  justification
+1    LTE-M           93.4  Strong on coverage, data rate, battery life.
+2    NB-IoT          86.9  Strong on coverage, data rate, battery life. Weak on mobility.
+3    5G RedCap       81.1  Strong on data rate, infrastructure ownership. Weak on cost at scale.
+4    LoRaWAN         41.1  Strong on data rate, battery life, cost at scale. Weak on mobility, coverage. Rules: R3.
+                           - R3 no cellular-style handover for wide-area mobility (x0.6)
+5    BLE/Zigbee       8.7  Strong on data rate, battery life, cost at scale. Weak on coverage, mobility. Rules: R2; R3. INFEASIBLE for this scenario.
+                           - R2 cannot provide the required coverage type (x0.3, infeasible)
+                           - R3 no cellular-style handover for wide-area mobility (x0.6)
+  NOTE: No terrestrial network mid-ocean: any of the five needs satellite/NTN backhaul for the ocean leg - the tool ranks the terrestrial options only.
+  => top pick: LTE-M   (expected from unit reasoning: LTE-M) MATCH
+
+============================================================================================================
+Scenario: S3 Factory-floor sensor network
+  Dense sensors within one building, 200 B every 0.1 s (16 kbps), mains/3-year battery, owned infrastructure.
+  requirement levels -> data_rate 2/5 (16 kbps), battery 3/5 (3 y), cost sensitivity 3/5, coverage=short_range_only, mobility=local, infra=self_owned
+------------------------------------------------------------------------------------------------------------
+rank technology     score  justification
+1    BLE/Zigbee     100.0  Strong on coverage, data rate, battery life.
+2    LoRaWAN         74.6  Strong on battery life, infrastructure ownership, cost at scale. Weak on coverage, mobility.
+3    NB-IoT          19.0  Strong on data rate, battery life, cost at scale. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.
+                           - R2 cannot provide the required coverage type (x0.3, infeasible)
+4    LTE-M           19.0  Strong on data rate, battery life. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.
+                           - R2 cannot provide the required coverage type (x0.3, infeasible)
+5    5G RedCap       17.6  Strong on data rate. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.
+                           - R2 cannot provide the required coverage type (x0.3, infeasible)
+  => top pick: BLE/Zigbee   (expected from unit reasoning: BLE/Zigbee) MATCH
+
+============================================================================================================
+Scenario: S4 Wearable health monitor
+  Body-worn patch streaming 20 kbps to a phone, rechargeable (days), local mobility.
+  requirement levels -> data_rate 2/5 (20 kbps), battery 1/5 (0.05 y), cost sensitivity 3/5, coverage=short_range_only, mobility=local, infra=self_owned
+------------------------------------------------------------------------------------------------------------
+rank technology     score  justification
+1    BLE/Zigbee     100.0  Strong on coverage, data rate, battery life.
+2    LoRaWAN         74.6  Strong on battery life, infrastructure ownership, cost at scale. Weak on coverage, mobility.
+3    NB-IoT          19.0  Strong on data rate, battery life, cost at scale. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.
+                           - R2 cannot provide the required coverage type (x0.3, infeasible)
+4    LTE-M           19.0  Strong on data rate, battery life. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.
+                           - R2 cannot provide the required coverage type (x0.3, infeasible)
+5    5G RedCap       18.8  Strong on data rate, battery life. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.
+                           - R2 cannot provide the required coverage type (x0.3, infeasible)
+  => top pick: BLE/Zigbee   (expected from unit reasoning: BLE/Zigbee) MATCH
+
+============================================================================================================
+Scenario: N1 NEW: City smart-parking sensors
+  10 000 in-ground sensors, 20 B per event (~every 10 min), 7-year battery, city-wide, operator network, tight budget.
+  requirement levels -> data_rate 1/5 (0.0002667 kbps), battery 4/5 (7 y), cost sensitivity 5/5, coverage=wide_area_cellular, mobility=stationary, infra=operator
+------------------------------------------------------------------------------------------------------------
+rank technology     score  justification
+1    NB-IoT          93.4  Strong on coverage, data rate, battery life. Weak on cost at scale.
+2    LTE-M           90.2  Strong on coverage, data rate, battery life. Weak on cost at scale.
+3    LoRaWAN         81.6  Strong on data rate, battery life, mobility. Weak on coverage, infrastructure ownership.
+4    5G RedCap       70.5  Strong on data rate, infrastructure ownership. Weak on cost at scale, battery life.
+5    BLE/Zigbee      19.5  Strong on data rate, battery life, mobility. Weak on coverage, infrastructure ownership. Rules: R2. INFEASIBLE for this scenario.
+                           - R2 cannot provide the required coverage type (x0.3, infeasible)
+  => top pick: NB-IoT   (expected from unit reasoning: NB-IoT) MATCH
+
+Summary (top 3 per scenario)
+  S1 Smart water meter                   NB-IoT (96.7) > LoRaWAN (84.9) > LTE-M (84.4)
+  S2 Fleet-tracked shipping container    LTE-M (93.4) > NB-IoT (86.9) > 5G RedCap (81.1)
+  S3 Factory-floor sensor network        BLE/Zigbee (100.0) > LoRaWAN (74.6) > NB-IoT (19.0)
+  S4 Wearable health monitor             BLE/Zigbee (100.0) > LoRaWAN (74.6) > NB-IoT (19.0)
+  N1 NEW: City smart-parking sensors     NB-IoT (93.4) > LTE-M (90.2) > LoRaWAN (81.6)

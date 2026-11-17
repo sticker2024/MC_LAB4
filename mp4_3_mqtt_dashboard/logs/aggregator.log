@@ -1,0 +1,35 @@
+11:12:47.164 [AGG] connected rc=Success; single wildcard subscription 'plant1/+/+' at QoS 1
+11:12:48.188 [AGG] STATUS plant1/lineA/status = online
+11:12:48.192 [AGG] STATUS plant1/lineB/status = online
+11:12:48.688 [AGG] NEW TOPIC discovered: plant1/lineA/temperature  (no code change needed)
+11:12:48.692 [AGG] NEW TOPIC discovered: plant1/lineA/vibration  (no code change needed)
+11:12:48.692 [AGG] NEW TOPIC discovered: plant1/lineB/temperature  (no code change needed)
+11:12:53.162 [AGG] ---- SUMMARY (3 topics; status: lineA=online, lineB=online) ----
+  plant1/lineA/temperature     latest=72.6     at 11:12:52.694  n=5
+  plant1/lineA/vibration       latest=1.58     at 11:12:52.699  n=9
+  plant1/lineB/temperature     latest=88.05    at 11:12:51.693  n=3
+11:12:59.163 [AGG] ---- SUMMARY (3 topics; status: lineA=online, lineB=online) ----
+  plant1/lineA/temperature     latest=65.14    at 11:12:58.697  n=11
+  plant1/lineA/vibration       latest=3.02     at 11:12:58.704  n=21
+  plant1/lineB/temperature     latest=67.76    at 11:12:57.696  n=7
+11:13:05.163 [AGG] ---- SUMMARY (3 topics; status: lineA=online, lineB=online) ----
+  plant1/lineA/temperature     latest=86.43    at 11:13:04.699  n=17
+  plant1/lineA/vibration       latest=1.9      at 11:13:04.708  n=33
+  plant1/lineB/temperature     latest=76.65    at 11:13:03.698  n=11
+11:13:08.618 [AGG] NEW TOPIC discovered: plant1/lineB/vibration  (no code change needed)
+11:13:11.163 [AGG] ---- SUMMARY (4 topics; status: lineA=online, lineB=online) ----
+  plant1/lineA/temperature     latest=74.89    at 11:13:10.702  n=23
+  plant1/lineA/vibration       latest=1.22     at 11:13:10.713  n=45
+  plant1/lineB/temperature     latest=75.44    at 11:13:09.700  n=15
+  plant1/lineB/vibration       latest=1.1      at 11:13:10.719  n=4
+11:13:17.164 [AGG] ---- SUMMARY (4 topics; status: lineA=online, lineB=online) ----
+  plant1/lineA/temperature     latest=70.41    at 11:13:16.704  n=29
+  plant1/lineA/vibration       latest=1.99     at 11:13:16.719  n=57
+  plant1/lineB/temperature     latest=73.33    at 11:13:15.702  n=19
+  plant1/lineB/vibration       latest=2.81     at 11:13:17.027  n=13
+11:13:18.048 [AGG] STATUS plant1/lineB/status = offline
+11:13:23.164 [AGG] ---- SUMMARY (4 topics; status: lineA=online, lineB=offline) ----
+  plant1/lineA/temperature     latest=72.88    at 11:13:22.707  n=35
+  plant1/lineA/vibration       latest=4.55     at 11:13:22.727  n=69
+  plant1/lineB/temperature     latest=72.93    at 11:13:17.202  n=20
+  plant1/lineB/vibration       latest=1.85     at 11:13:22.630  n=21

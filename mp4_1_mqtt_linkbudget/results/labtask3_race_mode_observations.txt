@@ -1,0 +1,12 @@
+Lab task 3 - observations from the UNCONTROLLED runs (publisher and subscriber retry within the same second after the broker returns)
+
+Publisher QoS 1, readings lost per run, 9 runs in order: 0, 1 (of 150), 0, 25, 0, 25, 0, 25, 0
+  -> 3 of 9 runs lost the publisher's entire queued backlog (25 readings, e.g. seq 29..53); 1 run lost a single reading.
+Every 25-reading loss lined up with the outage window, and the subscriber log showed session_present=False on reconnect:
+the broker had no subscription for the subscriber when the publisher's QoS 1 backlog arrived, so it was discarded at the
+broker->subscriber hop (not at the publisher->broker hop).
+Publisher QoS 0 in the same race mode: lost 25, 25, 15 readings (3 runs) and 25 (of 150).
+Controlled mode (subscriber retries every 0.25 s, publisher every 2 s): see labtask3_outage_ordered.csv
+  QoS 0 lost 19, 20, 20  |  QoS 1 lost 0, 0, 0.
+Conclusion: QoS 1 protects the publisher->broker hop; end-to-end delivery also needs the subscriber to be subscribed
+(persistent session restored, or prompt re-subscribe) when data arrives.

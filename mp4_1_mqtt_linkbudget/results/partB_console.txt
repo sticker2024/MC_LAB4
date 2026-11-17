@@ -1,0 +1,76 @@
+==============================================================================================================
+Part B - LPWAN link budget and battery life
+scenario: 200 sensors, 12 B every 30 min (17520 cycles/yr), d = 8 km, battery 19000 mAh, target 5 y
+path loss model: PL(d) = 91.5 + 10*3.5*log10(d/1 km)  ->  PL(8 km) = 123.1 dB
+LoRaWAN SF12 time-on-air for 25 B PHY payload = 1483 ms -> duty cycle per 30 min = 0.082 % (EU868 limit 1 %)
+==============================================================================================================
+  assumption NB-IoT  : Ptx 23 dBm, Srx -129 dBm, I_tx 220 mA x 3.00 s, I_rx 0 mA x 0.0 s, sleep 3 uA  [single-tone UL, many repetitions at deep coverage; 3 s active incl. signalling]
+  assumption LTE-M   : Ptx 23 dBm, Srx -125 dBm, I_tx 300 mA x 3.00 s, I_rx 0 mA x 0.0 s, sleep 5 uA  [CE Mode B repetitions; higher peak current than NB-IoT]
+  assumption LoRaWAN : Ptx 14 dBm, Srx -137 dBm, I_tx 44 mA x 1.48 s, I_rx 11 mA x 0.4 s, sleep 2 uA  [SF12/125 kHz, 12+13 B frame -> 1.48 s time-on-air; Class A RX windows 0.4 s]
+
+Comparison table (Part B)
+technology    Ptx    Srx    MCL      PL  margin   mAh/cycle  mAh/year   years  yrs(+1%SD)  meets 5 y?
+NB-IoT         23   -129    152   123.1    28.9      0.1848      3238     5.9         5.5  yes  (link closes)
+LTE-M          23   -125    148   123.1    24.9      0.2525      4424     4.3         4.1  NO   (link closes)
+LoRaWAN        14   -137    151   123.1    27.9      0.0203       356    53.3        34.8  yes  (link closes)
+
+Feasibility verdict (link margin >= 10 dB, life >= 5 y incl. self-discharge, operator coverage required for cellular):
+  NB-IoT  : not recommended  - needs operator coverage (none nearby) + per-device subscription
+  LTE-M   : not recommended  - life 4.1 y < 5 y; needs operator coverage (none nearby) + per-device subscription
+  LoRaWAN : FEASIBLE
+
+==============================================================================================================
+Lab task 4 - fleet-tracked shipping container, ocean crossing (no terrestrial coverage)
+==============================================================================================================
+Margin vs distance from the nearest base station/gateway, same MCLs (n = 3.5, and free-space n = 2 as a best case):
+  distance  PL n=3.5   PL n=2   NB-IoT m(n=3.5)    LTE-M m(n=3.5)  LoRaWAN m(n=3.5)     best-case(n=2) NB-IoT
+       1km      91.5     91.5              60.5              56.5              59.5                      60.5
+       8km     123.1    109.6              28.9              24.9              27.9                      42.4
+      30km     143.2    121.0               8.8               4.8               7.8                      31.0
+     100km     161.5    131.5              -9.5             -13.5             -10.5                      20.5
+     370km     181.4    142.9             -29.4             -33.4             -30.4                       9.1
+    1000km     196.5    151.5             -44.5             -48.5             -45.5                       0.5
+    3000km     213.2    161.0             -61.2             -65.2             -62.2                      -9.0
+Distance at which each technology's margin reaches 0 dB (n = 3.5):
+  NB-IoT  :    53.5 km
+  LTE-M   :    41.1 km
+  LoRaWAN :    50.1 km
+
+Why one distance cannot justify a technology here:
+  * The container moves: its distance to the nearest base station changes continuously from ~0 km in port
+    to thousands of km mid-ocean, so a single d (8 km in the farm) is meaningless - the answer is a
+    coverage-availability *profile* along the route, not one margin number.
+  * Beyond ~50 km from a base station the terrestrial margin is already negative for every technology
+    (see table); even with ideal free-space propagation (n = 2) the NB-IoT margin is only ~0 dB at 1000 km,
+    before real satellite slant range, pointing loss or Doppler - so no tuning of n, SF or repetitions fixes it.
+  * The decision is governed by non-link-budget axes of Section 4.3: roaming agreements / network
+    availability, mobility and hand-over, satellite (NTN) access, power/energy per position fix.
+  * The link budget would be re-done per segment (port, coastal, deep-sea) and for the satellite link geometry
+    (slant range, elevation, antenna gains), not with the terrestrial log-distance model.
+==============================================================================================================
+Lab task 5 - add 5G RedCap (representative values)
+==============================================================================================================
+  assumption 5G RedCap: NR RedCap, 20 MHz FR1 (representative): sensitivity ~ -94 dBm, 1.5 s active incl. signalling, eDRX idle 50 uA
+
+Extended comparison table (with RedCap)
+technology    Ptx    Srx    MCL      PL  margin   mAh/cycle  mAh/year   years  yrs(+1%SD)  meets 5 y?
+NB-IoT         23   -129    152   123.1    28.9      0.1848      3238     5.9         5.5  yes  (link closes)
+LTE-M          23   -125    148   123.1    24.9      0.2525      4424     4.3         4.1  NO   (link closes)
+LoRaWAN        14   -137    151   123.1    27.9      0.0203       356    53.3        34.8  yes  (link closes)
+5G RedCap      23    -94    117   123.1    -6.1      0.1916      3358     5.7         5.4  yes  (NO LINK)
+==============================================================================================================
+Lab task 6 - sensitivity to the path-loss exponent n
+==============================================================================================================
+    n  PL(8km)      NB-IoT       LTE-M     LoRaWAN   5G RedCap   recommended (feasible set)
+  2.5    114.1        37.9        33.9        36.9         2.9   LoRaWAN
+  3.0    118.6        33.4        29.4        32.4        -1.6   LoRaWAN
+  3.5    123.1        28.9        24.9        27.9        -6.1   LoRaWAN
+  4.0    127.6        24.4        20.4        23.4       -10.6   LoRaWAN
+  4.5    132.1        19.9        15.9        18.9       -15.1   LoRaWAN
+  5.0    136.7        15.3        11.3        14.3       -19.7   LoRaWAN
+
+Break-even exponent where the 8 km margin drops to the 10 dB reserve / to 0 dB:
+  NB-IoT    : n(10 dB) =  5.59   n(0 dB) =  6.70
+  LTE-M     : n(10 dB) =  5.15   n(0 dB) =  6.26
+  LoRaWAN   : n(10 dB) =  5.48   n(0 dB) =  6.59
+  5G RedCap : n(10 dB) =  1.72   n(0 dB) =  2.82

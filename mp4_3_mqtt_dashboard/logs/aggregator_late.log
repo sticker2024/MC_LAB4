@@ -1,0 +1,25 @@
+11:13:02.145 [AGG-late] connected rc=Success; single wildcard subscription 'plant1/+/+' at QoS 1
+11:13:02.187 [AGG-late] STATUS plant1/lineA/status = online  <-- RETAINED
+11:13:02.187 [AGG-late] NEW TOPIC discovered: plant1/lineA/temperature  (no code change needed)
+11:13:02.187 [AGG-late] plant1/lineA/temperature = 72.34  <-- RETAINED last-known value delivered on subscribe
+11:13:02.187 [AGG-late] NEW TOPIC discovered: plant1/lineA/vibration  (no code change needed)
+11:13:02.187 [AGG-late] plant1/lineA/vibration = 2.64  <-- RETAINED last-known value delivered on subscribe
+11:13:02.187 [AGG-late] STATUS plant1/lineB/status = online  <-- RETAINED
+11:13:02.187 [AGG-late] NEW TOPIC discovered: plant1/lineB/temperature  (no code change needed)
+11:13:02.187 [AGG-late] plant1/lineB/temperature = 74.47  <-- RETAINED last-known value delivered on subscribe
+11:13:08.145 [AGG-late] ---- SUMMARY (3 topics; status: lineA=online, lineB=online) ----
+  plant1/lineA/temperature     latest=70.5     at 11:13:07.701  n=7
+  plant1/lineA/vibration       latest=5.76     at 11:13:07.712  n=13
+  plant1/lineB/temperature     latest=77.9     at 11:13:06.699  n=5
+11:13:08.618 [AGG-late] NEW TOPIC discovered: plant1/lineB/vibration  (no code change needed)
+11:13:14.146 [AGG-late] ---- SUMMARY (4 topics; status: lineA=online, lineB=online) ----
+  plant1/lineA/temperature     latest=75.77    at 11:13:13.703  n=13
+  plant1/lineA/vibration       latest=2.3      at 11:13:13.716  n=25
+  plant1/lineB/temperature     latest=73.02    at 11:13:12.701  n=9
+  plant1/lineB/vibration       latest=4.9      at 11:13:13.520  n=8
+11:13:18.049 [AGG-late] STATUS plant1/lineB/status = offline
+11:13:20.146 [AGG-late] ---- SUMMARY (4 topics; status: lineA=online, lineB=offline) ----
+  plant1/lineA/temperature     latest=69.41    at 11:13:19.706  n=19
+  plant1/lineA/vibration       latest=1.81     at 11:13:19.722  n=37
+  plant1/lineB/temperature     latest=72.93    at 11:13:17.203  n=12
+  plant1/lineB/vibration       latest=1.42     at 11:13:19.828  n=17

@@ -1,0 +1,198 @@
+1794896960: mosquitto version 2.0.18 starting
+1794896960: Config loaded from /home/claude/MC_Unit4_Labs/mp4_1_mqtt_linkbudget/mosquitto_test.conf.
+1794896960: Opening ipv4 listen socket on port 1883.
+1794896960: mosquitto version 2.0.18 running
+1794896961: New connection from 127.0.0.1:51221 on port 1883.
+1794896961: New client connected from 127.0.0.1:51221 as cleaner (p2, c1, k60).
+1794896961: No will message specified.
+1794896961: Sending CONNACK to cleaner (0, 0)
+1794896961: Received PUBLISH from cleaner (d0, q1, r1, m1, 'factory/line3/status', ... (0 bytes))
+1794896961: Sending PUBACK to cleaner (m1, rc0)
+1794896961: Received PUBLISH from cleaner (d0, q1, r1, m2, 'factory/line3/temperature', ... (0 bytes))
+1794896961: Sending PUBACK to cleaner (m2, rc0)
+1794896962: Received DISCONNECT from cleaner
+1794896962: Client cleaner disconnected.
+1794896962: New connection from 127.0.0.1:34119 on port 1883.
+1794896962: New client connected from 127.0.0.1:34119 as auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (p2, c1, k30).
+1794896962: No will message specified.
+1794896962: Sending CONNACK to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (0, 0)
+1794896962: Received SUBSCRIBE from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884
+1794896962: 	factory/line3/temperature (QoS 1)
+1794896962: auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 1 factory/line3/temperature
+1794896962: 	factory/line3/status (QoS 1)
+1794896962: auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 1 factory/line3/status
+1794896962: Sending SUBACK to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884
+1794896962: New connection from 127.0.0.1:45167 on port 1883.
+1794896962: New client connected from 127.0.0.1:45167 as auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (p2, c1, k30).
+1794896962: No will message specified.
+1794896962: Sending CONNACK to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (0, 0)
+1794896962: Received SUBSCRIBE from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE
+1794896962: 	factory/+/temperature (QoS 1)
+1794896962: auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE 1 factory/+/temperature
+1794896962: 	factory/+/status (QoS 1)
+1794896962: auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE 1 factory/+/status
+1794896962: Sending SUBACK to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE
+1794896963: New connection from 127.0.0.1:55003 on port 1883.
+1794896963: New client connected from 127.0.0.1:55003 as line3-temp-sensor (p2, c1, k5).
+1794896963: Will message specified (7 bytes) (r1, q1).
+1794896963: 	factory/line3/status
+1794896963: Sending CONNACK to line3-temp-sensor (0, 0)
+1794896963: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m1, 'factory/line3/status', ... (6 bytes))
+1794896963: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m1, 'factory/line3/status', ... (6 bytes))
+1794896963: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m1, 'factory/line3/status', ... (6 bytes))
+1794896963: Sending PUBACK to line3-temp-sensor (m1, rc0)
+1794896963: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 1, RC:0)
+1794896963: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 1, RC:0)
+1794896964: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m2, 'factory/line3/temperature', ... (5 bytes))
+1794896964: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m2, 'factory/line3/temperature', ... (5 bytes))
+1794896964: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m2, 'factory/line3/temperature', ... (5 bytes))
+1794896964: Sending PUBACK to line3-temp-sensor (m2, rc0)
+1794896964: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 2, RC:0)
+1794896964: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 2, RC:0)
+1794896965: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m3, 'factory/line3/temperature', ... (5 bytes))
+1794896965: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m3, 'factory/line3/temperature', ... (5 bytes))
+1794896965: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m3, 'factory/line3/temperature', ... (5 bytes))
+1794896965: Sending PUBACK to line3-temp-sensor (m3, rc0)
+1794896965: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 3, RC:0)
+1794896965: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 3, RC:0)
+1794896966: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m4, 'factory/line3/temperature', ... (5 bytes))
+1794896966: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m4, 'factory/line3/temperature', ... (5 bytes))
+1794896966: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m4, 'factory/line3/temperature', ... (5 bytes))
+1794896966: Sending PUBACK to line3-temp-sensor (m4, rc0)
+1794896966: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 4, RC:0)
+1794896966: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 4, RC:0)
+1794896967: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m5, 'factory/line3/temperature', ... (5 bytes))
+1794896967: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m5, 'factory/line3/temperature', ... (5 bytes))
+1794896967: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m5, 'factory/line3/temperature', ... (5 bytes))
+1794896967: Sending PUBACK to line3-temp-sensor (m5, rc0)
+1794896967: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 5, RC:0)
+1794896967: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 5, RC:0)
+1794896968: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m6, 'factory/line3/temperature', ... (5 bytes))
+1794896968: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m6, 'factory/line3/temperature', ... (5 bytes))
+1794896968: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m6, 'factory/line3/temperature', ... (5 bytes))
+1794896968: Sending PUBACK to line3-temp-sensor (m6, rc0)
+1794896968: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 6, RC:0)
+1794896968: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 6, RC:0)
+1794896969: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m7, 'factory/line3/temperature', ... (5 bytes))
+1794896969: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m7, 'factory/line3/temperature', ... (5 bytes))
+1794896969: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m7, 'factory/line3/temperature', ... (5 bytes))
+1794896969: Sending PUBACK to line3-temp-sensor (m7, rc0)
+1794896969: Received PINGREQ from line3-temp-sensor
+1794896969: Sending PINGRESP to line3-temp-sensor
+1794896969: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 7, RC:0)
+1794896969: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 7, RC:0)
+1794896970: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m8, 'factory/line3/temperature', ... (5 bytes))
+1794896970: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m8, 'factory/line3/temperature', ... (5 bytes))
+1794896970: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m8, 'factory/line3/temperature', ... (5 bytes))
+1794896970: Sending PUBACK to line3-temp-sensor (m8, rc0)
+1794896970: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 8, RC:0)
+1794896970: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 8, RC:0)
+1794896971: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m9, 'factory/line3/temperature', ... (5 bytes))
+1794896971: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m9, 'factory/line3/temperature', ... (5 bytes))
+1794896971: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m9, 'factory/line3/temperature', ... (5 bytes))
+1794896971: Sending PUBACK to line3-temp-sensor (m9, rc0)
+1794896971: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 9, RC:0)
+1794896971: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 9, RC:0)
+1794896972: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m10, 'factory/line3/temperature', ... (5 bytes))
+1794896972: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m10, 'factory/line3/temperature', ... (5 bytes))
+1794896972: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m10, 'factory/line3/temperature', ... (5 bytes))
+1794896972: Sending PUBACK to line3-temp-sensor (m10, rc0)
+1794896972: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 10, RC:0)
+1794896972: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 10, RC:0)
+1794896973: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m11, 'factory/line3/temperature', ... (5 bytes))
+1794896973: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m11, 'factory/line3/temperature', ... (5 bytes))
+1794896973: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m11, 'factory/line3/temperature', ... (5 bytes))
+1794896973: Sending PUBACK to line3-temp-sensor (m11, rc0)
+1794896973: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 11, RC:0)
+1794896973: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 11, RC:0)
+1794896974: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m12, 'factory/line3/temperature', ... (5 bytes))
+1794896974: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m12, 'factory/line3/temperature', ... (5 bytes))
+1794896974: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m12, 'factory/line3/temperature', ... (5 bytes))
+1794896974: Sending PUBACK to line3-temp-sensor (m12, rc0)
+1794896974: Received PINGREQ from line3-temp-sensor
+1794896974: Sending PINGRESP to line3-temp-sensor
+1794896974: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 12, RC:0)
+1794896974: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 12, RC:0)
+1794896975: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m13, 'factory/line3/temperature', ... (5 bytes))
+1794896975: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m13, 'factory/line3/temperature', ... (5 bytes))
+1794896975: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m13, 'factory/line3/temperature', ... (5 bytes))
+1794896975: Sending PUBACK to line3-temp-sensor (m13, rc0)
+1794896975: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 13, RC:0)
+1794896975: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 13, RC:0)
+1794896976: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m14, 'factory/line3/temperature', ... (5 bytes))
+1794896976: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m14, 'factory/line3/temperature', ... (5 bytes))
+1794896976: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m14, 'factory/line3/temperature', ... (5 bytes))
+1794896976: Sending PUBACK to line3-temp-sensor (m14, rc0)
+1794896976: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 14, RC:0)
+1794896976: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 14, RC:0)
+1794896977: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m15, 'factory/line3/temperature', ... (5 bytes))
+1794896977: Sending PUBLISH to auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (d0, q1, r0, m15, 'factory/line3/temperature', ... (5 bytes))
+1794896977: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m15, 'factory/line3/temperature', ... (5 bytes))
+1794896977: Sending PUBACK to line3-temp-sensor (m15, rc0)
+1794896977: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 15, RC:0)
+1794896977: Received PUBACK from auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 (Mid: 15, RC:0)
+1794896977: Client auto-1ADFE6D3-19D2-822D-C1FE-A8FFB34D8884 closed its connection.
+1794896978: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m16, 'factory/line3/temperature', ... (4 bytes))
+1794896978: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m16, 'factory/line3/temperature', ... (4 bytes))
+1794896978: Sending PUBACK to line3-temp-sensor (m16, rc0)
+1794896978: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 16, RC:0)
+1794896979: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m17, 'factory/line3/temperature', ... (5 bytes))
+1794896979: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m17, 'factory/line3/temperature', ... (5 bytes))
+1794896979: Sending PUBACK to line3-temp-sensor (m17, rc0)
+1794896979: Received PINGREQ from line3-temp-sensor
+1794896979: Sending PINGRESP to line3-temp-sensor
+1794896979: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 17, RC:0)
+1794896980: New connection from 127.0.0.1:44139 on port 1883.
+1794896980: New client connected from 127.0.0.1:44139 as auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (p2, c1, k30).
+1794896980: No will message specified.
+1794896980: Sending CONNACK to auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (0, 0)
+1794896980: Received SUBSCRIBE from auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90
+1794896980: 	factory/line3/temperature (QoS 1)
+1794896980: auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 1 factory/line3/temperature
+1794896980: 	factory/line3/status (QoS 1)
+1794896980: auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 1 factory/line3/status
+1794896980: Sending SUBACK to auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90
+1794896980: Sending PUBLISH to auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (d0, q1, r1, m1, 'factory/line3/temperature', ... (5 bytes))
+1794896980: Sending PUBLISH to auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (d0, q1, r1, m2, 'factory/line3/status', ... (6 bytes))
+1794896980: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m18, 'factory/line3/temperature', ... (5 bytes))
+1794896980: Sending PUBLISH to auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (d0, q1, r0, m3, 'factory/line3/temperature', ... (5 bytes))
+1794896980: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m18, 'factory/line3/temperature', ... (5 bytes))
+1794896980: Sending PUBACK to line3-temp-sensor (m18, rc0)
+1794896980: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 18, RC:0)
+1794896980: Received PUBACK from auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (Mid: 1, RC:0)
+1794896980: Received PUBACK from auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (Mid: 2, RC:0)
+1794896980: Received PUBACK from auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (Mid: 3, RC:0)
+1794896981: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m19, 'factory/line3/temperature', ... (5 bytes))
+1794896981: Sending PUBLISH to auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (d0, q1, r0, m4, 'factory/line3/temperature', ... (5 bytes))
+1794896981: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m19, 'factory/line3/temperature', ... (5 bytes))
+1794896981: Sending PUBACK to line3-temp-sensor (m19, rc0)
+1794896981: Received PUBACK from auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (Mid: 4, RC:0)
+1794896981: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 19, RC:0)
+1794896982: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m20, 'factory/line3/temperature', ... (5 bytes))
+1794896982: Sending PUBLISH to auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (d0, q1, r0, m5, 'factory/line3/temperature', ... (5 bytes))
+1794896982: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m20, 'factory/line3/temperature', ... (5 bytes))
+1794896982: Sending PUBACK to line3-temp-sensor (m20, rc0)
+1794896982: Received PUBACK from auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (Mid: 5, RC:0)
+1794896982: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 20, RC:0)
+1794896983: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m21, 'factory/line3/temperature', ... (5 bytes))
+1794896983: Sending PUBLISH to auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (d0, q1, r0, m6, 'factory/line3/temperature', ... (5 bytes))
+1794896983: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m21, 'factory/line3/temperature', ... (5 bytes))
+1794896983: Sending PUBACK to line3-temp-sensor (m21, rc0)
+1794896983: Received PUBACK from auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (Mid: 6, RC:0)
+1794896983: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 21, RC:0)
+1794896984: Received PUBLISH from line3-temp-sensor (d0, q1, r1, m22, 'factory/line3/temperature', ... (5 bytes))
+1794896984: Sending PUBLISH to auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (d0, q1, r0, m7, 'factory/line3/temperature', ... (5 bytes))
+1794896984: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m22, 'factory/line3/temperature', ... (5 bytes))
+1794896984: Sending PUBACK to line3-temp-sensor (m22, rc0)
+1794896984: Received PINGREQ from line3-temp-sensor
+1794896984: Sending PINGRESP to line3-temp-sensor
+1794896984: Received PUBACK from auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (Mid: 7, RC:0)
+1794896984: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 22, RC:0)
+1794896985: Client line3-temp-sensor closed its connection.
+1794896985: Sending PUBLISH to auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (d0, q1, r0, m8, 'factory/line3/status', ... (7 bytes))
+1794896985: Sending PUBLISH to auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (d0, q1, r0, m23, 'factory/line3/status', ... (7 bytes))
+1794896985: Received PUBACK from auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 (Mid: 8, RC:0)
+1794896985: Received PUBACK from auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE (Mid: 23, RC:0)
+1794896989: Client auto-1BDCA7F9-243A-FE0E-87E2-C9511C2F1D90 closed its connection.
+1794896989: Client auto-5F95A3D6-7570-E2E2-7AF2-6A5BA67380DE closed its connection.
+1794896989: mosquitto version 2.0.18 terminating
